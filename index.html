@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Genrator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- wrapper  -->
+    <div class="container">
+
+        <h1 class="heading">Passward Genrator</h1>
+
+        <div class="display-container">
+            <input readonly placeholder="Passward" class="display" data-passwordDispaly>
+
+            <button class="copybtn" data-copyed>
+                <span data-copyms class="cpymsm">
+                </span>
+                <img src="./assets/copy.svg" alt="copy" width="23" height="23">
+            </button>
+        </div>
+
+        <!-- input container  -->
+        <div class="input-container">
+
+            <div class="lenght-container">
+                <p>Passward Lenght</p>
+                <p data-lenght-number>0</p>
+            </div>
+
+            <input type="range" min="1" max="20" class="slider" step="1" data-lenght-slider >
+
+            <!-- check boxes  -->
+
+
+            <div class="check">
+                <input type="checkbox" id="upperchase">
+                <label for="upperchase">Includes upper case letter</label>
+                
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">Includes lower case letter</label>
+                
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="numberletter">
+                <label for="numberletter">Includes Number letter</label>
+                
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="symbolletter">
+                <label for="symbolletter">Includes Symbol letter</label>
+                
+            </div>
+
+            <!-- strenght contanier  -->
+            <div class="strength-container">
+              <p>Strength</p>
+              <div class="indicator" data-indicator></div>
+            </div>
+
+            <!-- genrate Passward -->
+            <button class="Genratebutton">
+                Genrate Passward
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
